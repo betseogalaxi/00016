@@ -7,6 +7,8 @@
   <meta name="keywords" content="bonuslar, bahis bonusu, deneme bonusu, bahis siteleri, betpuan bonus">
   <title>BetPuan Bonus 🎁 En İyi Kampanyalar & Hoş Geldin 2025</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="canonical" href="https://sportingbetcasino.top" />
+  
 </head>
 <body class="bg-[#F3FFB5] text-black font-sans">
 
@@ -55,16 +57,40 @@
       BetPuan’da düzenli kampanyalar ve yeni üyeler için özel hoş geldin paketleri bulunur. Bonus kurallarını okuyup avantajlı dönüşümlerle kazancınızı artırın.
     </p>
 
-    <p class="text-lg font-semibold mt-6">
-      🔗 Hızlı erişim:
-    </p>
+<p class="text-lg font-semibold mt-6">
+  🔗 Hızlı erişim:
+</p>
 
-    <p class="text-md mt-1">
-      <a href="https://betpuan.co" class="underline hover:text-yellow-700 transition">betpuan.co</a> •
-      <a href="https://betpuanmobil.com" class="underline hover:text-yellow-700 transition">betpuanmobil.com</a> •
-      <a href="https://betpuanuyelik.com" class="underline hover:text-yellow-700 transition">betpuanuyelik.com</a> ✅
-    </p>
-  </section>
+<p class="text-md mt-1" id="betpuan-links">
+  <!-- Links will be inserted here by JavaScript -->
+</p>
+</section>
+
+<script>
+  const links = [
+    { href: "https://betpuan.co", text: "betpuan.co" },
+    { href: "https://betpuanguncelgiris.com", text: "betpuanguncelgiris.com" },
+    { href: "https://betpuanmobil.com", text: "betpuanmobil.com" },
+    { href: "https://betpuanuyelik.com", text: "betpuanuyelik.com" },
+    { href: "https://bonusbetpuan.com", text: "bonusbetpuan.com" },
+    { href: "https://girisbetpuan.com", text: "girisbetpuan.com" },
+    { href: "https://puanbetgiris.com", text: "puanbetgiris.com" }
+  ];
+
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  const container = document.getElementById('betpuan-links');
+  const shuffled = shuffle([...links]);
+  container.innerHTML = shuffled.map(link =>
+    `<a href="${link.href}" class="underline hover:text-yellow-700 transition" target="_blank" rel="dofollow">${link.text}</a>`
+  ).join(' • ') + ' ✅';
+</script>
 
   <!-- Footer Section -->
   <footer class="bg-[#B8EE72] py-10 text-center text-black">
